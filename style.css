@@ -1,24 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header{
-    border-bottom: 1px solid black;
-  }
+  border-bottom: 1px solid black;
+  text-align: center;
+  background-color: rgb(186, 123, 241);
+}
+
+header > h3 {
+  background-color: rgb(197, 181, 212);
+}
   
-  main{
-    width: 800px;
-  }
+main{
+  width: 800px;
+  margin: auto;
+}
   
-  aside{
-    width: 180px;
-    border: 1px solid black;
-  }
-  
-  footer{
-    background-color: black;
-    color: white;
-    width: 100%;
-  }
-  
-  button{
-    background-color: black;
-    color: white;
-    font-family: serif;
-  }
+aside{
+  width: 180px;
+  height: 150px;
+  border: 1px solid black;
+  text-align: center;
+  position: fixed;
+  right: 0;
+  bottom: 4vh;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+section, section p {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+footer{
+  background-color: rgb(186, 123, 241);
+  color: rgb(0, 0, 0);
+  width: 100%;
+  position:fixed;
+  bottom: 0;
+  height: 20px;
+  text-align: center
+}
+
+button {
+  width: 70% ;
+  margin: 0 auto;
+  height: 24px;
+}
+
+button:hover{
+  background-color: rgb(186, 123, 241);
+  color: white;
+  font-family: serif;
+  border: rgb(186, 123, 241);
+}
+
+button:active {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-family: serif;
+}
+
+aside:has(button:active) {
+  color: white;
+  background-color: rgb(186, 123, 241);;
+}
